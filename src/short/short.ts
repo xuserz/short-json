@@ -6,7 +6,7 @@ const renameKey = (obj: any, oldKey: string, newKey: string) => {
 const short_json = (data: any, names: Object = {}) => {
   if (!data) return data
   var is_array = true;
-  if (!data[0]) { data = [data]; is_array = false; }
+  if (!Array.isArray(data)) { data = [data]; is_array = false; }
 
   for (var key of data) {
     const keyNames = Object.keys(key);

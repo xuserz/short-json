@@ -12,7 +12,7 @@ const deshort_json = ({
 }) => {
   if (!data) return data
   var is_array = true;
-  if (!data[0]) { data = [data]; is_array = false; }
+  if (!Array.isArray(data)) { data = [data]; is_array = false; }
 
   for (var key of data) {
     const keyNames = Object.keys(key);
