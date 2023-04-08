@@ -11,12 +11,12 @@ or
 **Использование**
    
   **Сжать**
-
-   short_json({
-      id: 10,
-      text: "string"
-    })
-<!-- {
+```
+short_json({
+  id: 10,
+  text: "string"
+})
+return {
   data: {
     1: 10,
     2: "string"
@@ -25,11 +25,11 @@ or
     id: 1,
     text: 2
   }
-} -->
-
+}
+```
   **Вернуть обратно**
-
-   deshort_json({
+```
+deshort_json({
   data: {
     1: 10,
     2: "string"
@@ -39,7 +39,10 @@ or
     text: 2
   }
 })
-<!-- {
-      id: 10,
-      text: "string"
-    } -->
+return {
+  {
+    id: 10,
+    text: "string"
+  }
+}
+```
