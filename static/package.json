@@ -1,0 +1,19 @@
+{
+  "name": "short-json",
+  "version": "1.0.0-beta",
+  "description": "Сокращение json",
+  "main": "index.js",
+  "module": "index.mjs",
+  "typings": "index.d.ts",
+  "license": "MIT",
+  "author": "apiteam.ru",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xuserz/short-json"
+  },
+  "keywords": [
+    "short-json",
+    "json-short",
+    "short json"
+  ]
+}
